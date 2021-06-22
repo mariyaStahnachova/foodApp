@@ -1,0 +1,14 @@
+import css from './Input.module.css'
+
+
+const Input = (props) => {
+    return (
+        <div className={css.input}>
+            <label htmlFor={props.input.id}>{props.label}</label>
+            <input {...props.inpot}/>
+
+        </div>
+    );
+};
+
+export default Input;
